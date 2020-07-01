@@ -3,4 +3,4 @@
 
 <h2>Integrantes</h2><br>
 Camilo Marin - 2172969<br>
-Deyci Toloza - 2172986<br>
+Deyci Toloza - 2171986<br>
