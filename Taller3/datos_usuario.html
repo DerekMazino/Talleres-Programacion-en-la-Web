@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+</head>
+<h1>Rellena tu CV</h1>
+<br>
+<form action="principal.html">
+    Nombre
+    <br>
+    <input type="text" name="nombre" size="20">
+    <br>
+    Apellido
+    <br>
+    <input type="text" name="apellido" size="20">
+    <br>
+    Contraseña
+    <br>
+    <input type="password" name="contrasena" size="20">
+    <br>
+    Identificacion
+    <br>
+    <select name="identificacion">
+        <option value="1">T.I</option>
+        <option value="2">C.C</option>
+        <option value="3">C.E</option>
+      </select>
+    <input type="text" name="nidentificacion" size="20">
+    <br>
+    Sexo
+    <br>
+    <input type="radio" name="sexo" value="1">Hombre<br>
+    <input type="radio" name="sexo" value="2">Mujer<br>
+    Incluir Imagen
+    <br>
+    <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+    <br>
+    <input type="checkbox" name="java">Estudiante...<br>
+    <div class="" title="Datos Personales">
+        Datos Personales
+        <div class="panel-body" title="sadas">
+            Departamento
+            <br>
+            <select name="despartamento">
+                <option value="0">-Selecciona-</option>
+                <option value="1">Cundimarca</option>
+                <option value="2">Santander</option>
+                <option value="3">Antioquia</option>
+            </select><br>
+            Fecha de Nacimiento
+            <br>
+            <input type="text" name="dia" size="10">
+            <select name="mes">
+                <option value="0">-Selecciona-</option>
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+            <input type="text" name="mes" size="10"><br>
+            Temas de Interés
+            <br>
+            <select name="transporte" size="2">
+                <option>Administración de base de datos</option>  
+                <option>Analisis y Programación</option>                
+                <option>Arquitectura</option>         
+                <option>Calidad</option>         
+            </select>
+        </div>
+    </div>
+    <br>
+    <input type="submit" value="Guardar Cambios">
+    <input type="submit" value="Borrar los datos introducidos">
+</form>
+</body>
+</html>
