@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Autos</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+</head>
+<body>
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+            <div class="callout">
+                <h1>Rellena los datos de tu vehiculo</h1>
+                <br>
+                <form action="principal.html">
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Id_Coche</label>
+                            <input type="text" name="id" size="20" placeholder="00" />
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Tipo de Combustible</label>
+                            <select>
+                                <option value="1">Diésel plus</option>
+                                <option value="2">Diésel normal</option>
+                                <option value="3">Biodiésel</option>
+                                <option value="4">Gasolina 95 octanos</option>
+                                <option value="5">Gas Natural</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Tipo Auto:</label>
+                            <select name="tauto">
+                                <option value="1">Coupé</option>
+                                <option value="2">Cabrio</option>
+                                <option value="3">Spider</option>
+                                <option value="4">Todoterreno</option>
+                                <option value="5">SUV</option>
+                                <option value="6">Sedán</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Estado</label>
+                            <select name="estado">
+                                <option value="1">No</option>
+                                <option value="2">Se</option>
+                                <option value="3">a</option>
+                                <option value="4">Que</option>
+                                <option value="5">se</option>
+                                <option value="6">Refiere xD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Marca</label>
+                            <select name="marca">
+                                <option value="1">Mercedes-Benz</option>
+                                <option value="2">Jeep</option>
+                                <option value="3">Jaguar</option>
+                                <option value="4">Lamborghini</option>
+                                <option value="5">Maserati</option>
+                                <option value="6">Mitsubishi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Usuario</label>
+                            <input type="text" name="usuario" size="20">
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Modelo</label>
+                            <input type="text" name="usuario" size="20">
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Año</label>
+                            <input type="text" name="usuario" size="20">
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Detalle</label>
+                            <textarea name="detalle" rows="10" cols="20" placeholder="Detalles"></textarea>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Caja</label>
+                            <input type="text" name="id" size="20" placeholder="00" />
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Motor</label>
+                            <input type="text" name="id" size="20" placeholder="00" />
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Fecha PUB</label>
+                            <input type="date" id="start" name="trip-start"
+                            value="2020-07-01"
+                            min="2018-01-01" max="2021-12-31">
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Precio</label>
+                            <input type="text" name="id" size="20" placeholder="00" />
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Moneda</label>
+                            <input type="text" name="id" size="20" placeholder="00" />
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Descripcion 1</label>
+                            <textarea name="descripcion1" rows="10" cols="20" placeholder="Detalles"></textarea>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Descripcion 2</label>
+                            <textarea name="descripcion2" rows="10" cols="20" placeholder="Detalles"></textarea>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Descripcion 3</label>
+                            <textarea name="descripcion3" rows="10" cols="20" placeholder="Detalles"></textarea>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 cell">
+                            <label>Descripcion 4</label>
+                            <textarea name="descripcion4" rows="10" cols="20" placeholder="Detalles"></textarea>
+                        </div>
+                    </div>
+                    <a href="#" class="button">Guardar datos</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
