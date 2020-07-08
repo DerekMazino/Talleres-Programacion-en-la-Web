@@ -3,113 +3,145 @@
 <head>
     <title>Registro de Autos</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
+<body background="autosimg.jpg">
+<div class="jumbotron text-center" style="margin-bottom:0">
 <h1>Rellena los datos de tu vehiculo</h1>
+</div>
 <br>
-<form action="principal.html">
-    Id_Coche
-    <br>
-    <input type="text" name="id" size="20">
-    <br>
-    Tipo de Combustible
-    <br>
-    <select name="combustible">
-        <option value="1">Diésel plus</option>
-        <option value="2">Diésel normal</option>
-        <option value="3">Biodiésel</option>
-        <option value="4">Gasolina 95 octanos</option>
-        <option value="5">Gas Natural</option>
-    </select>
-    <br>
-    Tipo Auto:
-    <br>
-    <select name="tauto">
-        <option value="1">Coupé</option>
-        <option value="2">Cabrio</option>
-        <option value="3">Spider</option>
-        <option value="4">Todoterreno</option>
-        <option value="5">SUV</option>
-        <option value="6">Sedán</option>
-    </select>
-    <br>
-    Estado
-    <br>
-    <select name="estado">
-        <option value="1">No</option>
-        <option value="2">Se</option>
-        <option value="3">a</option>
-        <option value="4">Que</option>
-        <option value="5">se</option>
-        <option value="6">Refiere xD</option>
-    </select>
-    <br>
-    Marca
-    <br>
-    <select name="marca">
-        <option value="1">Mercedes-Benz</option>
-        <option value="2">Jeep</option>
-        <option value="3">Jaguar</option>
-        <option value="4">Lamborghini</option>
-        <option value="5">Maserati</option>
-        <option value="6">Mitsubishi</option>
-    </select>
-    <br>
-    Usuario
-    <br>
-    <input type="text" name="usuario" size="20">
-    <br>
-    Modelo
-    <br>
-    <input type="text" name="modelo" size="20">
-    <br>
-    Año
-    <br>
-    <input type="text" name="año" size="40">
-    <br>
-    Detalle
-    <br>
-    <textarea name="comentarios" rows="10" cols="40">Detalles</textarea>
-    <br>
-    Caja
-    <br>
-    <input type="text" name="caja" size="20">
-    <br>
-    Motor
-    <br>
-    <input type="text" name="motor" size="20">
-    <br>
-    Fecha PUB
-    <br>
-    <input type="date" id="start" name="trip-start"
-    value="2020-07-01"
-    min="2018-01-01" max="2021-12-31">
-    <br>
-    Precio
-    <br>
-    <input type="text" name="precio" size="20">
-    <br>
-    Moneda
-    <br>
-    <input type="text" name="moneda" size="20">
-    <br>
-    Descripcion 1
-    <br>
-    <textarea name="descripcion1" rows="10" cols="20">Aqui va la Descripcion 1</textarea>
-    <br>
-    Descripcion 2
-    <br>
-    <textarea name="descripcion2" rows="10" cols="20">Aqui va la Descripcion 2</textarea>
-    <br>
-    Descripcion 3
-    <br>
-    <textarea name="descripcion3" rows="10" cols="20">Aqui va la Descripcion 3</textarea>
-    <br>
-    Descripcion 4
-    <br>
-    <textarea name="descripcion4" rows="10" cols="20">Aqui va la Descripcion 4</textarea>
-    <br>
-    <input type="submit" value="Guardar Cambios">
-    <input type="submit" value="Borrar los datos introducidos">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center p-3 mb-2 bg-warning text-dark ">Formulario</h5>
+                    <form action="principal.html">
+                        <div>
+                            <label>Identificacion Coche</label>
+                            <br>
+                            <input type="text" class="form-control" size="20">
+                        </div>
+                        <div>
+                            <label>Tipo de Combustible</label>
+                            <br>
+                            <select name="Pais" class="form-control">
+                            <option value="1">Diésel plus</option>
+                            <option value="2">Diésel normal</option>
+                            <option value="3">Biodiésel</option>
+                            <option value="4">Gasolina 95 octanos</option>
+                            <option value="5">Gas Natural</option>
+                            </select>
+                        <div>
+                            <label>Tipo Auto:</label>
+                            <br>
+                            <select name="tauto" class="form-control">
+                            <option value="1">Coupé</option>
+                            <option value="2">Cabrio</option>
+                            <option value="3">Spider</option>
+                            <option value="4">Todoterreno</option>
+                            <option value="5">SUV</option>
+                            <option value="6">Sedán</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Estado:</label>
+                            <br>
+                            <select name="estado" class="form-control">
+                            <option value="1">Excelente</option>
+                            <option value="2">Muy bueno</option>
+                            <option value="2">Bueno</option>
+                            <option value="2">Aceptable</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Marca:</label>
+                            <br>
+                            <select name="marca" class="form-control">
+                            <option value="1">Mercedes-Benz</option>
+                            <option value="2">Jeep</option>
+                            <option value="3">Jaguar</option>
+                            <option value="4">Lamborghini</option>
+                            <option value="5">Maserati</option>
+                            <option value="6">Mitsubishi</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Usuario</label>
+                            <br>
+                            <input type="text" class="form-control" size="20">
+                        </div>
+                        <div>
+                            <label>Modelo</label>
+                            <br>
+                            <input type="text" class="form-control" size="20">
+                        </div>
+                        <div>
+                            <label>Año</label>
+                            <br>
+                            <input type="text" class="form-control" size="20">
+                        </div>
+                        <div>
+                            <label>Detalle</label>
+                            <br>
+                        <textarea rows="10" class="form-control" cols="40">Detalles aquí</textarea>
+                        </div>
+                        <div>
+                            <label>Caja</label>
+                            <br>
+                            <input type="text" class="form-control" size="20">
+                        </div>
+                        <div>
+                            <label>Motor</label>
+                            <br>
+                            <input type="text" class="form-control" size="20">
+                        </div>
+                        <div>
+                            <label>Fecha PUB</label>
+                            <br>
+                            <input class="form-control" type="date" id="start" name="trip-start"
+                            value="2020-07-01"
+                            min="2018-01-01" max="2021-12-31">                      
+                        <div>
+                            <label>Precio</label>
+                            <br>
+                            <input type="text" class="form-control" size="20">
+                        </div>
+                        <div>
+                            <label>Moneda</label>
+                            <br>
+                            <input type="text" class="form-control" size="20">
+                        </div>
+                        <div>
+                            <label>Decripcion 1</label>
+                            <br>
+                        <textarea rows="10" class="form-control" cols="40">Aqui va la Descripcion 1</textarea>
+                        </div>
+                        <div>
+                            <label>Descripcion 2</label>
+                            <br>
+                        <textarea rows="10" class="form-control" cols="40">Aqui va la Descripcion 2</textarea>
+                        </div>
+                        <div>
+                            <label>Descripcion 3</label>
+                            <br>
+                        <textarea rows="10" class="form-control" cols="40">Aqui va la Descripcion 3</textarea>
+                        </div>
+                        <div>
+                            <label>Descripcion 4</label>
+                            <br>
+                        <textarea rows="10" class="form-control" cols="40">Aqui va la Descripcion 4</textarea>
+                        </div>
+                        <br>
+                        <input type="submit" class="btn btn-primary" value="Guardar Cambios">
+                        <input type="submit" class="btn btn-primary" value="Borrar los datos introducidos">
+                        </div>
+                    </div>
+            </div>            
+    </div>
+</div>
 </form>
 </body>
 </html>
