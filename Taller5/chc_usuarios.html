@@ -12,10 +12,7 @@
     <h1>Rellena tu CV</h1>
     <br>
     <form name="formUsuario">
-        <label for="id">ID Usuario</label>
-        <br>
-        <input type="text" name="id" size="20">
-        <br>
+
         <label for="nombre">Nombre</label>
         <br>
         <input type="text" name="nombre" size="20">
@@ -53,7 +50,11 @@
         <br>
         <label for="password">Contraseña</label>
         <br>
-        <input type="password" name="contrasena" size="20">
+        <input type="password" name="contrasena" id="pwd1" size="20">
+        <br>
+        <label for="password2">Repetir Contraseña</label>
+        <br>
+        <input type="password" name="contrasena2" id="pws2" size="20">
         <br>
         <input type="submit" value="Guardar Cambios" onclick="valida_envia()">
         <br>
