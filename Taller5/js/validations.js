@@ -55,7 +55,7 @@ function valida_envia(){
     var patron=/[\^$.*+?=!:|\\/()\[\]{}]/;
     let usustr=document.formUsuario.usuario.value
     if (patron.test(usustr)){
-        alert('Error, El camapo usuario tiene al menos un carácter ^ $. * +? =! : | \ / () [] {}');
+        alert('Error, El campo usuario tiene al menos un carácter ^ $. * +? =! : | \ / () [] {}');
         document.formUsuario.usuario.focus();
         bandera=1;
         return 0;
