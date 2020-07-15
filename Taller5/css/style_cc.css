@@ -3,12 +3,13 @@ body{
     margin:0 auto;
 }
 
-input{
+#formulario input{
     border-radius: 0 5px 5px 0px;
     border: solid 1px #ccc;
     height: 35px;
     min-width: 140px;
 }
+
 select{
     justify-content: center;
     border-radius: 0 5px 5px 0px;
@@ -22,7 +23,7 @@ select{
     text-align: center;
 }
 
-#formularios{
+form{
     font-family: Verdana;
     margin: auto;
     width: 550px;
@@ -66,7 +67,7 @@ select{
     font-family: 'Roboto';
 }
 .btn{
-	border-radius: 4px;
+	border-radius: 5px 5px 5px 5px;
     line-height: 0em;
 	padding: 20px 15px;
     text-decoration: none;
@@ -74,8 +75,82 @@ select{
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
     font-family: Verdana;
 }
-
 .btn-color{
 	color: white;
-	background-color: #db732d;
+    background-color: #db732d;
+}
+
+.project-accordion {
+    width: 100%; 
+    margin:0;
+    font-size: 12px;
+}
+.project-label {
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  color: #f2f2f2;
+  padding: 15px 0 10px 1px;
+  line-height: 35px;
+  background: none;
+  border: solid 0px #161b1a;
+  background-color: #161b1a;
+}
+
+
+.project-input:checked + label {
+  background: none;
+  color:#ff8800;
+}
+
+.project-label:hover {
+    color:#db7500;
+}
+
+.project-label:after, .project-input:checked + .project-label:after {
+  content: "+";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 2em;
+  height: 100%;
+  line-height: 1.8em;
+  text-align: center;
+  background-color: none;
+  font-size: 34px;
+}
+
+.project-label:hover:after, .project-input:checked + .project-label:after {
+  background-color: none;
+}
+
+.project-input:checked + .project-label:after {
+  content: "-";
+}
+
+.project-input {
+  display: none;
+}
+.project-text {
+    background: linear-gradient(#fff, #F0F1F7);
+    max-height: 0;
+  overflow: hidden;
+
+}
+
+.project-input:checked ~ .project-text, .project-sub { 
+  max-height: 1200px;
+    display: visible;
+}
+
+.project-sub {
+  font-size: 14px;
+  font-weight:none;
+   text-align: center;
+    color:#000;
+  padding: 5px;
+    margin-top:10px;
 }

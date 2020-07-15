@@ -14,9 +14,10 @@
     <h1>Completa los datos</h1>
     </header>
     <br>
-    <br>    
+    <br> 
     <form name="formUsuario">
-    <div id="formularios">
+    
+    <div id="formulario">  
         <div class="columns">
             <div class="field-container">
                 <div class="field-icon">
@@ -97,14 +98,19 @@
                 <input type="password" name="contrasena2" id="pws2"> <br/><br/>       
             </div>
         </div>
+    </div>
         <p class="center-content">
             <input type="submit" class="btn btn-color" value="Guardar Cambios" onclick="valida_envia()">
         </p>
-        <div>
-            <label for="gustos">Añadir registro de gustos</label>
-            <input type="radio" id="gustos" value="desplegable">
-        </div>
-    </form>
-    </div>
+    <div class="project-accordion">  
+        <input class="project-input" id="tab1" name="project-tabs" type="radio" />
+        <label class="project-label" for="tab1">Define el Auto que buscas</label>  
+        <article class="project-text">     
+          <div class="project-sub">
+            2013<br>2014<br>2015
+            </div>
+             </article></div>
+      </div>
+    </form> 
 </body>
 </html>
