@@ -1,0 +1,81 @@
+body{
+    background: url("../autosimg.jpg");
+    margin:0 auto;
+}
+
+input{
+    border-radius: 0 5px 5px 0px;
+    border: solid 1px #ccc;
+    height: 35px;
+    min-width: 140px;
+}
+select{
+    justify-content: center;
+    border-radius: 0 5px 5px 0px;
+    border: solid 1px #ccc;
+    height: 39px;
+    width: 400px;
+    text-align:center;   
+}
+
+.center-content{
+    text-align: center;
+}
+
+#formularios{
+    font-family: Verdana;
+    margin: auto;
+    width: 550px;
+    box-sizing: border-box; 
+    background-color: white;
+    border-radius: 12px 12px 12px 12px;
+    font-size: 8pt;
+    padding: 20px;
+}
+.columns >div{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -2px;
+}
+.field-container div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.field-icon{
+    background-color: #eee;
+    border-radius: 5px 0 0 5px; 
+    color: rgb(99, 99, 99);
+    padding: 10px 5px 11px 10px;
+    border: solid 1px #ccc;
+    min-height: 16px;
+    min-width: 65px;
+    margin-right: -6px;
+    vertical-align: top;
+}
+.cabecera{
+    background-color: #000000;
+    color: aliceblue;
+    margin: 0 auto;
+    height: 80px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+}
+.btn{
+	border-radius: 4px;
+    line-height: 0em;
+	padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    font-family: Verdana;
+}
+
+.btn-color{
+	color: white;
+	background-color: #db732d;
+}
