@@ -6,8 +6,15 @@ body{
 #formulario input{
     border-radius: 0 5px 5px 0px;
     border: solid 1px #ccc;
-    height: 35px;
+    height: 34px;
     min-width: 140px;
+}
+
+#formulario_2 input{
+  border-radius: 0 5px 5px 0px;
+  border: solid 1px #ccc;
+  min-height: 34px;
+  min-width: 120px;
 }
 
 select{
@@ -50,7 +57,7 @@ form{
     color: rgb(99, 99, 99);
     padding: 10px 5px 11px 10px;
     border: solid 1px #ccc;
-    min-height: 16px;
+    min-height: 15px;
     min-width: 65px;
     margin-right: -6px;
     vertical-align: top;
@@ -83,7 +90,6 @@ form{
 .project-accordion {
     width: 100%; 
     margin:0;
-    font-size: 12px;
 }
 .project-label {
   text-align: center;
@@ -98,7 +104,6 @@ form{
   border: solid 0px #161b1a;
   background-color: #161b1a;
 }
-
 
 .project-input:checked + label {
   background: none;
@@ -120,7 +125,7 @@ form{
   line-height: 1.8em;
   text-align: center;
   background-color: none;
-  font-size: 34px;
+
 }
 
 .project-label:hover:after, .project-input:checked + .project-label:after {
@@ -147,10 +152,39 @@ form{
 }
 
 .project-sub {
-  font-size: 14px;
-  font-weight:none;
-   text-align: center;
-    color:#000;
+  text-align: center;
+  color:#000;
   padding: 5px;
-    margin-top:10px;
+  margin-top:10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #db7500;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #db7500;
+  cursor: pointer;
 }

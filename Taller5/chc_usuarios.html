@@ -106,10 +106,45 @@
         <input class="project-input" id="tab1" name="project-tabs" type="radio" />
         <label class="project-label" for="tab1">Define el Auto que buscas</label>  
         <article class="project-text">     
-          <div class="project-sub">
-            2013<br>2014<br>2015
+            <div id="formulario_2" class="project-sub">
+                <form>
+                    <div class="columns">
+                        <div class="field-container">
+                            <div class="field-icon">
+                                <i class="fa fa-caret-square-o-down fa-lg" aria-hidden="true"></i>
+                                <label>Marca</label>
+                            </div>
+                            <input type="text" name="marca" placeholder="Bentley"> <br/><br/>       
+                        </div>
+                        <div class="field-container">
+                            <div class="field-icon">
+                                <i class="fa fa-car fa-lg" aria-hidden="true"></i>
+                                <label>Estilo </label>
+                            </div>
+                            <input type="text" name="estilo" placeholder="Berlina de lujo"> <br/><br/>       
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="field-container">
+                            <div class="field-icon">
+                                <i class="fa fa-circle-o-notch fa-lg" aria-hidden="true"></i>
+                                <label>Modelo</label>
+                            </div>
+                            <input type="text" name="modelo" placeholder="Continental GT"> <br/><br/>       
+                        </div>
+                        <div class="field-container">
+                            <div class="field-icon">
+                                <i class="fa fa-usd fa-lg" aria-hidden="true"></i>
+                                <label>Precio (Mill)</label>
+                            </div>
+                            <input type="range" min="50" max="500" value="50" class="slider" id="myRange">
+                            <!--<p>Value: <span id="valor"></span></p> -->       
+                        </div>
+                    </div>                
+                </form>
             </div>
-             </article></div>
+        </article>
+    </div>
       </div>
     </form> 
 </body>

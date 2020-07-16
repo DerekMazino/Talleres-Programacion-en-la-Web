@@ -142,7 +142,6 @@ function valida_envia(){
     
 }
 
-
 function check(e) {
     tecla = (document.all) ? e.keyCode : e.which;
 
@@ -157,4 +156,10 @@ function check(e) {
     return patron.test(tecla_final);
 }
 
+var slider = document.getElementById("myRange");
+var output = document.getElementById("valor");
+output.innerHTML = slider.value; 
 
+slider.oninput = function() {
+  output.innerHTML = this.value;
+} 
