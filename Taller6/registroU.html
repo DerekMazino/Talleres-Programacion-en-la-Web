@@ -10,38 +10,44 @@
 </head>
 <body>
     <form action="">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre">
-        <br>
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido">
-        <br>
-        <label for="fNacimiento">Fecha Nacimiento:</label>
-        <input type="date" name="fNacimiento" id="fNacimiento">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
-        <br>
-        <label for="usuario">Usuario:</label>
-        <input type="text" name="usuario" id="usuarios">
-        <br>
-        <label for="password">Contraseña:</label>
-        <input type="password" name="contrasena" id="contrasena">
-        <br>
-        <label for="confPassword">Confirmar Contraseña:</label>
-        <input type="password" name="confPass" id="confPass">
-        <br>
-        <label for="enfermedades">Ha sufrido enfermedades?:</label><br>
-        Si<input type="radio" name="enfermedad" id="radio1">
-        No<input type="radio" name="enfermedad" id="radio2">
-        <br>
-        <label for="contagiosas">Enfermedades Contagiosas?:</label><br>
-        Si<input type="radio" name="contagiosa" id="radio3">
-        No<input type="radio" name="contagiosa" id="radio4">
-        <br>
-        <label for="cuales">Cuales?:</label><br>
-        <textarea name="lEnfermedades" id="lEnfermedades" cols="30" rows="10"></textarea>
-        <br>
+        <div id="principal" class="recuadro1">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido">
+            <br>
+            <label for="fNacimiento">Fecha Nacimiento:</label>
+            <input type="date" name="fNacimiento" id="fNacimiento">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuarios">
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena">
+            <br>
+            <label for="confPassword">Confirmar Contraseña:</label>
+            <input type="password" name="confPass" id="confPass">
+            <br>
+            <label for="enfermedades">Ha sufrido enfermedades?:</label><br>
+            Si<input type="radio" name="enfermedad" id="radio1" value="si">
+            No<input type="radio" name="enfermedad" id="radio2" value="no">
+        </div>
+        <div id="opcional1" class="recuadro2">
+            <br>
+            <label for="contagiosas">Enfermedades Contagiosas?:</label><br>
+            Si<input type="radio" name="contagiosa" id="radio3" value="si">
+            No<input type="radio" name="contagiosa" id="radio4" value="no">
+        </div>
+        <div id="opcional2" class="recuadro3">
+            <br>
+            <label for="cuales">Cuales?:</label><br>
+            <textarea name="lEnfermedades" id="lEnfermedades" cols="30" rows="10"></textarea>
+            <br>
+        </div>
         <button type="submit">Guardar Datos</button>
     </form>
 </body>
