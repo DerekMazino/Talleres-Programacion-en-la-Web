@@ -11,24 +11,44 @@ function inicialiarEventos(){
     $("#btn1").click(btn1Click);
 }
 function celda1(){
+    if(bandera!=0){
+        alert("Solo se puede editar una linea. Recargue la pagina para poder"
+        +"editar otra");
+        return 0;
+    }
     $(this).hide();
     $("#edicion1").show();
     enableRow1(false);
     bandera=1;
 }
 function celda2(){
+    if(bandera!=0){
+        alert("Solo se puede editar una linea. Recargue la pagina para poder"
+        +"editar otra");
+        return 0;
+    }
     $(this).hide();
     $("#edicion2").show();
     enableRow2(false);
     bandera=2;
 }
 function celda3(){
+    if(bandera!=0){
+        alert("Solo se puede editar una linea. Recargue la pagina para poder"
+        +"editar otra");
+        return 0;
+    }
     $(this).hide();
     $("#edicion3").show();
     enableRow3(false);
     bandera=3;
 }
 function celda4(){
+    if(bandera!=0){
+        alert("Solo se puede editar una linea. Recargue la pagina para poder"
+        +"editar otra");
+        return 0;
+    }
     $(this).hide();
     $("#edicion4").show();
     enableRow4(false);
@@ -51,6 +71,7 @@ function valoresIniciales(){
     initialValueRow2();
     initialValueRow3();
     initialValueRow4();
+    bandera=0;
 }
 function initialValueRow1(){
     $("#Alimentos1").val("Arandano");
