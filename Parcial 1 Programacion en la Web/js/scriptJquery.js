@@ -9,6 +9,7 @@ function inicialiarEventos(){
     $("#opcional1").hide();
     $("#btn2").click(btn2Click);
     $("#btn1").click(btn1Click);
+    
 }
 function celda1(){
     if(bandera!=0){
