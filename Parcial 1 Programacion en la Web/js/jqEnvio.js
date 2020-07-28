@@ -32,4 +32,7 @@ function parametroURL() {
     $("#Grasas").text(meses[2]);
     $("#Proteinas").text(meses[3]);
     $("#Carbohidratos").text(meses[4]);
+    if(meses[5]=="2"){
+        $("#imagen").attr("src","img/nok.png");
+    }
 }
