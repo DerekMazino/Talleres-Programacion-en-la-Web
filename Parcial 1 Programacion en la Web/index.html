@@ -4,100 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcial: Pagina Principal</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
     <script src="js/scriptJquery.js"></script>
 </head>
-<body>
-    <form action="envio.html" method="GET">
-        <div class="Principal">
-            <table>
-                <tr>
-                    <th>Alimento</th>
-                    <th>Calorias (kCal)</th> 
-                    <th>Grasas (g)</th>
-                    <th>Proteína (g)</th>
-                    <th>Carbohidratos (g)</th>
-                    <th>ok</th>
-                    <th>Opciones</th>
-                </tr>
-                <tr>
-                    <td><input type="text" name="Alimento1" id="Alimentos1"></td>
-                    <td><input type="text" name="Calorias1" id="Calorias1"></td>
-                    <td><input type="text" name="Grasas1" id="Grasas1"></td>
-                    <td><input type="text" name="Protehina1" id="Protehina1"></td>
-                    <td><input type="text" name="Carbohidratos1" id="Carbohidratos1"></td>
-                    <td><img src="img/ok.png" alt="ok" id="img1">
-                        <select name="ok_nok1" id="ok_nok1">
-                            <option value="1">Bien</option>
-                            <option value="2">Mal</option>
-                        </select>    
-                    </td>
-                    <td><label for="editar" name="editar1" id="editar1">Editar</label>
-                        <label for="editar" name="edicion1" id="edicion1">En edición</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="Alimento2" id="Alimentos2"></td>
-                    <td><input type="text" name="Calorias2" id="Calorias2"></td>
-                    <td><input type="text" name="Grasas2" id="Grasas2"></td>
-                    <td><input type="text" name="Protehina2" id="Protehina2"></td>
-                    <td><input type="text" name="Carbohidratos2" id="Carbohidratos2"></td>
-                    <td><img src="img/ok.png" alt="ok" id="img2">
-                        <select name="ok_nok2" id="ok_nok2">
-                            <option value="1">Bien</option>
-                            <option value="2">Mal</option>
-                        </select>   
-                    </td>
-                    <td><label for="editar" name="editar2" id="editar2">Editar</label>
-                        <label for="editar" name="edicion2" id="edicion2">En edición</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="Alimento3" id="Alimentos3"></td>
-                    <td><input type="text" name="Calorias3" id="Calorias3"></td>
-                    <td><input type="text" name="Grasas3" id="Grasas3"></td>
-                    <td><input type="text" name="Protehina3" id="Protehina3"></td>
-                    <td><input type="text" name="Carbohidratos3" id="Carbohidratos3"></td>
-                    <td><img src="img/ok.png" alt="ok" id="img3">
-                        <select name="ok_nok3" id="ok_nok3">
-                            <option value="1">Bien</option>
-                            <option value="2">Mal</option>
-                        </select>   
-                    </td>
-                    <td><label for="editar" name="editar3" id="editar3">Editar</label>
-                        <label for="editar" name="edicion3" id="edicion3">En edición</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="Alimento4" id="Alimentos4"></td>
-                    <td><input type="text" name="Calorias4" id="Calorias4"></td>
-                    <td><input type="text" name="Grasas4" id="Grasas4"></td>
-                    <td><input type="text" name="Protehina4" id="Protehina4"></td>
-                    <td><input type="text" name="Carbohidratos4" id="Carbohidratos4"></td>
-                    <td><img src="img/ok.png" alt="ok" id="img4">
-                        <select name="ok_nok4" id="ok_nok4">
-                            <option value="1">Bien</option>
-                            <option value="2">Mal</option>
-                        </select>   
-                    </td>
-                    <td><label for="editar" name="editar4" id="editar4">Editar</label>
-                    <label for="editar" name="edicion4" id="edicion4">En edición</label>
-                    </td>
-                </tr>
-            </table>
-            <label for="">Contenido nutricional por cada 100g de alimento.</label>
-            <br><br><br>
-            
+<body background="img/Fondo.jpg">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-xl-4 row d-flex justify-content-center">
+                <!-- <div class="card mt-4"> -->
+                    <!-- <div class="card-body"> -->
+                        <form action="envio.html" method="GET">
+                                <div class="Principal">
+                                    <table class="table table-sm table-dark table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="text-center">Alimento</th>
+                                                <th scope="col" class="text-center">Calorias (kCal)</th> 
+                                                <th scope="col" class="text-center">Grasas (g)</th>
+                                                <th scope="col" class="text-center">Proteína (g)</th>
+                                                <th scope="col" class="text-center">Carbohidratos (g)</th>
+                                                <th scope="col" class="text-center">ok</th>
+                                                <th scope="col" class="text-center">Opciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" name="Alimento1" id="Alimentos1" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Calorias1" id="Calorias1" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Grasas1" id="Grasas1" class="border-0 rounded-pill text-center" ></td>
+                                                <td><input type="text" name="Protehina1" id="Protehina1" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Carbohidratos1" id="Carbohidratos1" class="border-0 rounded-pill text-center"></td>
+                                                <td><img src="img/ok.png" alt="ok" id="img1">
+                                                    <select name="ok_nok1" id="ok_nok1" class="border-0 rounded-pill ">
+                                                        <option value="1">Bien</option>
+                                                        <option value="2">Mal</option>
+                                                    </select>    
+                                                </td>
+                                                <td><label for="editar" name="editar1" id="editar1">Editar</label>
+                                                    <label for="editar" name="edicion1" id="edicion1">En edición</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="text" name="Alimento2" id="Alimentos2" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Calorias2" id="Calorias2" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Grasas2" id="Grasas2" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Protehina2" id="Protehina2" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Carbohidratos2" id="Carbohidratos2" class="border-0 rounded-pill text-center"></td>
+                                                <td><img src="img/ok.png" alt="ok" id="img2">
+                                                    <select name="ok_nok2" id="ok_nok2" class="border-0 rounded-pill ">
+                                                        <option value="1">Bien</option>
+                                                        <option value="2">Mal</option>
+                                                    </select>   
+                                                </td>
+                                                <td><label for="editar" name="editar2" id="editar2">Editar</label>
+                                                    <label for="editar" name="edicion2" id="edicion2">En edición</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="text" name="Alimento3" id="Alimentos3" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Calorias3" id="Calorias3" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Grasas3" id="Grasas3" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Protehina3" id="Protehina3" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Carbohidratos3" id="Carbohidratos3" class="border-0 rounded-pill text-center"></td>
+                                                <td><img src="img/ok.png" alt="ok" id="img3">
+                                                    <select name="ok_nok3" id="ok_nok3" class="border-0 rounded-pill ">
+                                                        <option value="1">Bien</option>
+                                                        <option value="2">Mal</option>
+                                                    </select>   
+                                                </td>
+                                                <td><label for="editar" name="editar3" id="editar3">Editar</label>
+                                                    <label for="editar" name="edicion3" id="edicion3">En edición</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="text" name="Alimento4" id="Alimentos4" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Calorias4" id="Calorias4" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Grasas4" id="Grasas4" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Protehina4" id="Protehina4" class="border-0 rounded-pill text-center"></td>
+                                                <td><input type="text" name="Carbohidratos4" id="Carbohidratos4" class="border-0 rounded-pill text-center"></td>
+                                                <td><img src="img/ok.png" alt="ok" id="img4">
+                                                    <select name="ok_nok4" id="ok_nok4" class="border-0 rounded-pill ">
+                                                        <option value="1">Bien</option>
+                                                        <option value="2">Mal</option>
+                                                    </select>   
+                                                </td>
+                                                <td><label for="editar" name="editar4" id="editar4">Editar</label>
+                                                <label for="editar" name="edicion4" id="edicion4">En edición</label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="card-text text-light text-center">Contenido nutricional por cada 100g de alimento.</p>
+                                    <br><br><br>
+                                    
+                                </div>
+                                <div id="opcional1" class="recuadro2">
+                                    <p class="card-text text-light">Pulse Aceptar para guardar los cambios o Cancelar para anularlos</p><br>
+                                    <button type="submit" id="btn1" class="btn btn-primary btn-sm" data-toggle="collapse">Aceptar</button>
+                                    <button type="button" id="btn2" class="btn btn-secondary btn-sm" data-toggle="collapse">Cancelar</button>
+                                </div>
+                            </div>
+                        </form>
+                    <!-- </div> -->
+                <!-- </div> -->
+            </div>
         </div>
-        <div id="opcional1" class="recuadro2">
-            <label for="">Pulse Aceptar para guardar los cambios o Cancelar para anularlos</label><br>
-            <button type="submit" id="btn1">Aceptar</button>
-            <button type="button" id="btn2">Cancelar</button>
-        </div>
-        
-    </form>
+    </div>
 </body>
 </html>
