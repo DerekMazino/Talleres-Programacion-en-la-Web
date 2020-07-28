@@ -3,8 +3,8 @@ x.ready(inicializarEventos);//Se comienza a ejecutar la funcion principal
 
 function inicializarEventos(){
     valoresIniciales();//Se carga el formulrio sin mostrar las partes opcionales
-    let x = $("input[name=enfermedad]");//Se traen los datos del input
-    x.click(clickEnfermedad);//se usa evento click que se active al dar un click sobre el juego de radios
+    let imp = $("input[name=enfermedad]");//Se traen los datos del input
+    imp.click(clickEnfermedad);//se usa evento click que se active al dar un click sobre el juego de radios
     let y = $("input[name=contagiosa]");
     y.click(clickContagiosa);
 }
@@ -18,7 +18,7 @@ function clickEnfermedad(){
     if($(this).val()=="si"){//Se comprueba si seleccionó 'si' o 'no'
         x.show("fast");//Se muestra rápido
     }else{
-        x.hide("slow");//Se oculta lento
+        x.hide("slow");//Se oculta lento  
     }
 }
 function clickContagiosa(){
