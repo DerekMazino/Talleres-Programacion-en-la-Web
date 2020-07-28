@@ -1,3 +1,4 @@
+let bandera=0;
 $(document).ready(inicialiarEventos);
 function inicialiarEventos(){
     valoresIniciales();
@@ -7,26 +8,31 @@ function inicialiarEventos(){
     $("#editar4").click(celda4);
     $("#opcional1").hide();
     $("#btn2").click(btn2Click);
+    $("#btn1").click(btn1Click);
 }
 function celda1(){
     $(this).hide();
     $("#edicion1").show();
     enableRow1(false);
+    bandera=1;
 }
 function celda2(){
     $(this).hide();
     $("#edicion2").show();
     enableRow2(false);
+    bandera=2;
 }
 function celda3(){
     $(this).hide();
     $("#edicion3").show();
     enableRow3(false);
+    bandera=3;
 }
 function celda4(){
     $(this).hide();
     $("#edicion4").show();
     enableRow4(false);
+    bandera=4;
 }
 function valoresIniciales(){
     $("#edicion1").hide();
@@ -80,6 +86,7 @@ function enableRow1(enab){
     $("#Grasas1").prop("disabled", enab);
     $("#Protehina1").prop("disabled", enab);
     $("#Carbohidratos1").prop("disabled", enab);
+    $("#ok_nok1").prop("disabled", enab);
     $("#opcional1").show();
     if(!enab){
         $("#ok_nok1").show();
@@ -92,6 +99,7 @@ function enableRow2(enab){
     $("#Grasas2").prop("disabled", enab);
     $("#Protehina2").prop("disabled", enab);
     $("#Carbohidratos2").prop("disabled", enab);
+    $("#ok_nok2").prop("disabled", enab);
     $("#opcional1").show();
     if(!enab){
         $("#ok_nok2").show();
@@ -104,6 +112,7 @@ function enableRow3(enab){
     $("#Grasas3").prop("disabled", enab);
     $("#Protehina3").prop("disabled", enab);
     $("#Carbohidratos3").prop("disabled", enab);
+    $("#ok_nok3").prop("disabled", enab);
     $("#opcional1").show();
     if(!enab){
         $("#ok_nok3").show();
@@ -116,6 +125,7 @@ function enableRow4(enab){
     $("#Grasas4").prop("disabled", enab);
     $("#Protehina4").prop("disabled", enab);
     $("#Carbohidratos4").prop("disabled", enab);
+    $("#ok_nok4").prop("disabled", enab);
     $("#opcional1").show();
     if(!enab){
         $("#ok_nok4").show();
@@ -133,4 +143,9 @@ function btn2Click(){
     $("#img2").show();
     $("#img3").show();
     $("#img4").show();
+    bandera=0;
 }
+function btn1Click(){
+    alert("Se enviaran los datos modificados");
+}
+
