@@ -15,7 +15,7 @@ function parmURL() {
     x = 0;
     while (x < url.length){
         p = url[x].split("=");
-        meses[x]=p[1];
+        epll[x]=p[1];
         x++;
     }
     console.log(epll);
