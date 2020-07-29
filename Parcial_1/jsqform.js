@@ -2,13 +2,9 @@ $(document).ready(function action(){
     parmURL();
 });
 function parmURL() {
-    /* Obtener la url completa */
     url = document.URL;
-    /* Buscar a partir del signo de interrogación ? */
     url = String(url.match(/\?+.+/));
-    /* limpiar la cadena quitándole el signo ? */
     url = url.replace("?", "");
-    /* Crear un array con parametro=valor */
     url = url.split("&");   
     let epll; 
     epll=new Array(5);
@@ -24,7 +20,7 @@ function parmURL() {
     $("#Grasas").text(epll[2]);
     $("#Proteinas").text(epll[3]);
     $("#Carbohidratos").text(epll[4]);
-    if(epll[5]=="2"){
+    if(epll[5]=="mal"){
         $("#imagen").attr("src","meh.png");
     }
 }

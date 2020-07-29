@@ -1,0 +1,45 @@
+img{
+    width: 25px; height: 25px;
+}
+
+body{
+	font-family: Arial;
+    background: url("fondo.jpg");
+    margin:auto;
+}
+
+#main-container{
+	margin: 150px auto;
+	width: 273px;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td{
+	padding: 20px;
+}
+
+th{
+    padding: 20px 50px;
+	background-color: #2a2463;
+	border-bottom: solid 5px #100f36;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #3a3566;
+	color: white;
+}
+

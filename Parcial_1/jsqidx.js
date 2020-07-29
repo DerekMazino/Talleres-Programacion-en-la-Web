@@ -45,23 +45,28 @@ function fila1 (){
 
 function fila2 (){
     if(flag==0){
-    $("label#food_l2").hide();
-    $("input#food_l2").show("swing");
-    $("label#cal_l2").hide();
-    $("input#cal_l2").show("swing");
-    $("label#gre_l2").hide();
-    $("input#gre_l2").show("swing");
-    $("label#pro_l2").hide();
-    $("input#pro_l2").show("swing");
-    $("label#car_l2").hide();
-    $("input#car_l2").show("swing");
-    $("#img2").hide();
-    $("#select2").prop("disabled", false);
-    $("#select2").show("swing");
-    $("#edit_button2").hide();
-    $("#p2").show("swing");
-    $("#opc").show("swing");
-    flag=1;
+        $("label#food_l2").hide();
+        $("input#food_l2").show("swing");
+        $("input#food_l2").prop("disabled", false);
+        $("label#cal_l2").hide();
+        $("input#cal_l2").show("swing");
+        $("input#cal_l2").prop("disabled", false);
+        $("label#gre_l2").hide();
+        $("input#gre_l2").show("swing");
+        $("input#gre_l2").prop("disabled", false);
+        $("label#pro_l2").hide();
+        $("input#pro_l2").show("swing");
+        $("input#pro_l2").prop("disabled", false);
+        $("label#car_l2").hide();
+        $("input#car_l2").show("swing");
+        $("input#car_l2").prop("disabled", false);
+        $("#img2").hide();
+        $("#select2").prop("disabled", false);
+        $("#select2").show("swing");
+        $("#edit_button2").hide();
+        $("#p2").show("swing");
+        $("#opc").show("swing");
+        flag=1;
     }
     else{
         alert("Solo puedes editar una fila a la vez");
@@ -70,23 +75,28 @@ function fila2 (){
 
 function fila3 (){
     if(flag==0){
-    $("label#food_l3").hide();
-    $("input#food_l3").show("swing");
-    $("label#cal_l3").hide();
-    $("input#cal_l3").show("swing");
-    $("label#gre_l3").hide();
-    $("input#gre_l3").show("swing");
-    $("label#pro_l3").hide();
-    $("input#pro_l3").show("swing");
-    $("label#car_l3").hide();
-    $("input#car_l3").show("swing");
-    $("#img3").hide();
-    $("#select3").prop("disabled", false);
-    $("#select3").show("swing");
-    $("#edit_button3").hide();
-    $("#p3").show("swing");
-    $("#opc").show("swing");
-    flag=1;
+        $("label#food_l3").hide();
+        $("input#food_l3").show("swing");
+        $("input#food_l3").prop("disabled", false);
+        $("label#cal_l3").hide();
+        $("input#cal_l3").show("swing");
+        $("input#cal_l3").prop("disabled", false);
+        $("label#gre_l3").hide();
+        $("input#gre_l3").show("swing");
+        $("input#gre_l3").prop("disabled", false);
+        $("label#pro_l3").hide();
+        $("input#pro_l3").show("swing");
+        $("input#pro_l3").prop("disabled", false);
+        $("label#car_l3").hide();
+        $("input#car_l3").show("swing");
+        $("input#car_l3").prop("disabled", false);
+        $("#img3").hide();
+        $("#select3").prop("disabled", false);
+        $("#select3").show("swing");
+        $("#edit_button3").hide();
+        $("#p3").show("swing");
+        $("#opc").show("swing");
+        flag=1;
     }
     else{
         alert("Solo puedes editar una fila a la vez");
@@ -95,23 +105,28 @@ function fila3 (){
 
 function fila4 (){
     if(flag==0){
-    $("label#food_l4").hide();
-    $("input#food_l4").show("swing");
-    $("label#cal_l4").hide();
-    $("input#cal_l4").show("swing");
-    $("label#gre_l4").hide();
-    $("input#gre_l4").show("swing");
-    $("label#pro_l4").hide();
-    $("input#pro_l4").show("swing");
-    $("label#car_l4").hide();
-    $("input#car_l4").show("swing");
-    $("#img4").hide();
-    $("#select4").prop("disabled", false);
-    $("#select4").show("swing");
-    $("#edit_button4").hide();
-    $("#p4").show("swing");
-    $("#opc").show("swing");
-    flag=1;
+        $("label#food_l4").hide();
+        $("input#food_l4").show("swing");
+        $("input#food_l4").prop("disabled", false);
+        $("label#cal_l4").hide();
+        $("input#cal_l4").show("swing");
+        $("input#cal_l4").prop("disabled", false);
+        $("label#gre_l4").hide();
+        $("input#gre_l4").show("swing");
+        $("input#gre_l4").prop("disabled", false);
+        $("label#pro_l4").hide();
+        $("input#pro_l4").show("swing");
+        $("input#pro_l4").prop("disabled", false);
+        $("label#car_l4").hide();
+        $("input#car_l4").show("swing");
+        $("input#car_l4").prop("disabled", false);
+        $("#img4").hide();
+        $("#select4").prop("disabled", false);
+        $("#select4").show("swing");
+        $("#edit_button4").hide();
+        $("#p4").show("swing");
+        $("#opc").show("swing");
+        flag=1;
     }
     else{
         alert("Solo puedes editar una fila a la vez");
