@@ -20,29 +20,30 @@ function traerDatos() {
             let datos = JSON.parse(this.responseText);
             console.log(datos);
             let tabla = document.querySelector('#table');
-            tabla.innerHTML = '';
+            tabla.innerHTML = `<tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Usuario</th>
+            <th>Email</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th>Website</th>
+            <th>Compañia</th>
+            </tr>`;
 
             for (let item of datos) {
                 tabla.innerHTML += `
-                <tr>
-                <th>${item.id}</th>
-                <th>${item.name}</th>
-                <th>${item.username}</th>
-                <th>${item.email}</th>
-                <th>${item.address.street}</th>
-                <th>${item.address.suite}</th>
-                <th>${item.address.city}</th>
-                <th>${item.address.zipcode}</th>
-                <th>${item.address.geo.lat}</th>
-                <th>${item.address.geo.lng}</th>
-                <th>${item.phone}</th>
-                <th>${item.website}</th>
-                <th>${item.company.name}</th>
-                <th>${item.company.catchPhrase}</th>
-                <th>${item.company.bs}</th>
+                <tr id="table">
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>${item.username}</td>
+                <td>${item.email}</td>
+                <td>${item.address.street} ${item.address.suite} ${item.address.city} ${item.address.zipcode} ${item.address.geo.lat} ${item.address.geo.lng}</td>
+                <td>${item.phone}</td>
+                <td>${item.website}</td>
+                <td>${item.company.name} ${item.company.catchPhrase} ${item.company.bs}</td>
                 </tr>`
             }
-
         }
     }
 }
