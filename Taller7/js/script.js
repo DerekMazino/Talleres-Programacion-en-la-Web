@@ -10,7 +10,7 @@ function llenarDepartamentos(){
         console.log(json);
         let regiones = json;
         let departamentos=[];
-        let html='';
+        let html='<option value="">Seleccione...</option>';
         regiones.forEach(element => {
             /* html+='<option>'+element.departamento+'</option>'; */
             departamentos.push(element.departamento)
