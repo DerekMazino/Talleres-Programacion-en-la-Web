@@ -8,12 +8,20 @@ function iniciarEventos(){
         let departamentos=[];
         let html='';
         regiones.forEach(element => {
-            html+='<option>'+element.departamento+'</option>';
+            /* html+='<option>'+element.departamento+'</option>'; */
+            departamentos.push(element.departamento)
+        });
+        sinRepetidos=departamentos.unique();
+        sinRepetidos.forEach(element =>{
+            html+='<option>'+element+'</option>';
         });
         document.getElementById('departamento').innerHTML=html;
     });
     
 
 }
+Array.prototype.unique=function(a){
+    return function(){return this.filter(a)}}(function(a,b,c){return c.indexOf(a,b+1)<0
+});
 
     
