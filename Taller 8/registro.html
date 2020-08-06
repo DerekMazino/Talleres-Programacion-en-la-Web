@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Registro de usuario</h1>
+    <form action="">
+        <label for="nom">Nombres</label>
+        <input type="text" id="nom" name="nombre">
+        <br>
+        <label for="apll">Apellidos</label>
+        <input type="text" id="apll" name="apellidos">
+        <br>
+        <label for="tdoc">Tipo de documento</label>
+        <select name="tdoc" id="tdoc">
+            <option value="carnetdip">Carné diplomatico</option>
+            <option value="cc">Cédula de ciudadanía</option>
+            <option value="cext">Cédula de extrangería</option>
+            <option value="nit">Número de identificación tributaria</option>
+            <option value="pin">Número de identificación personal</option>
+            <option value="pass">Pasaporte</option>
+            <option value="peresp">Permiso especial</option>
+            <option value="rcivil">Registro Civil</option>
+            <option value="ti">Tarjeta de Identidad</option>
+        </select>
+        <br>
+        <label for="doc">Documento</label>
+        <input type="text" id="doc" name="doc">
+        <br>
+        <label for="lnac">Lugar de nacimiento</label>
+        <select name="lnac" id="lnac">
+            <option value="l_nac">Seleccione ...</option>
+        </select>
+        <br>
+        <label for="fnac">Fecha de nacimiento</label>
+        <input type="date" id="fnac" name="fnac" min="1900-01-01">
+        <br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <br>
+        <label for="tel">Teléfono</label>
+        <input type="text" id="tel" name="tel">
+        <br>
+        <label for="user">Usuario</label>
+        <input type="text" id="user" name="usu">
+        <br>
+        <label for="pss">Contraseña</label>
+        <input type="password" id="pss" name="pssw">
+        <br>
+        <label for="cpss">Confirmar contraseña</label>
+        <input type="password" id="cpss" name="cpssw">
+        <br>
+        <label for="lres">Lugar de Residencia</label>
+        <select name="lres" id="lres">
+            <option value="lres">Seleccione ...</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
