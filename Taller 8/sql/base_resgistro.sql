@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Hola soy una base que aun no se crea uwu
 drop database if exists usuario_registro;
 create database usuario_registro;
@@ -29,3 +30,6 @@ contraseña varchar(20),
 constraint tipodocumento foreign key (fk_tipodocumento) REFERENCES tipodocumento(id_tipdoc),
 constraint lugaresidencia foreign key(fk_lugaresidencia) REFERENCES ciudad(id_ciudad)
 );
+=======
+#Hola soy una base que aun no se crea uwu
+>>>>>>> master
