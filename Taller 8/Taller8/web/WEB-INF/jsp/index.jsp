@@ -9,9 +9,9 @@
 </head>
 <body>
     <h1>Integrantes: </h1>
+    <h2>Marly Maldonado - 2172712</h2>
     <h2>Camilo Marin - 2172969</h2>
     <h2>Deyci Toloza - 2171986</h2>
-    <h2>Marly Maldonado - 2172712</h2>
     <a href="registro.html">Solución Taller 8</a>
 </body>
 </html>
