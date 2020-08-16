@@ -1,0 +1,118 @@
+<form id ="personForm" class="form" role="form" autocomplete="off" th:object="${personForm}" th:action="${editMode} ?@{/editPerson} : @{/personForm}" method="post">
+	<!--Es necesario para poder pasar la validacion del Model-->
+	<input class="form-control" type=hidden th:field="${personForm.id}"  th:if="${editMode}">
+	<input class="form-control" type=hidden th:field="${personForm.password}"  th:if="${editMode}">
+	<input class="form-control" type=hidden th:field="${personForm.confirmPassword}" th:if="${editMode}">
+	<!-- Nombres -->
+	<div class="form-group row">
+		<label class="col-lg-3 col-form-label form-control-label">Nombres</label>
+		<div class="col-lg-9">
+			<input class="form-control" type="text" th:field="${personForm.firstName}" >
+			<div class="alert-danger" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">Error name	</div>
+		</div>
+	</div>
+	<!-- Apellidos -->
+	<div class="form-group row">
+		<label class="col-lg-3 col-form-label form-control-label">Apellidos</label>
+		<div class="col-lg-9">
+			<input class="form-control" type="text" th:field="${personForm.lastName}">
+			<div class="alert-danger" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Error name</div>
+		</div>
+	</div>
+	<!-- Tipo Documento -->
+	<div class="form-group row">
+		<label class="col-lg-3 col-form-label form-control-label">Tipo Documento</label>
+		<div class="col-lg-9">
+			<select class="form-control" th:field="${personForm.tipo}">
+        	<option value="0">Seleccione...</option>
+			<option th:each="tipo :${tipoDocument}" th:value="${tipo.id}" th:text="${tipo.name}">
+			</option>
+		</select>
+		<div class="alert-danger" th:if="${#fields.hasErrors('tipo')}" th:errors="*{tipo}">Error name</div>
+		</div>
+	</div>
+	<!-- Documento -->
+	<div class="form-group row">
+		<label class="col-lg-3 col-form-label form-control-label">Documento</label>
+		<div class="col-lg-9">
+			<input class="form-control" type="text" th:field="${personForm.document}">
+			<div class="alert-danger" th:if="${#fields.hasErrors('document')}" th:errors="*{document}">Error name</div>
+		</div>
+	</div>
+	<!-- Lugar de Nacimiento -->
+	<div class="form-group row">
+		<label class="col-lg-3 col-form-label form-control-label">Lugar de Nacimiento</label>
+		<div class="col-lg-9">
+			<select class="form-control" name="lnac" id="lnac" th:field="${personForm.city}">
+            <option value="l_nac">Seleccione ...</option>
+        </select>
+        <div class="alert-danger" th:if="${#fields.hasErrors('city')}" th:errors="*{city}">Error name</div>
+		</div>
+	</div>
+	<!-- Fecha de Nacimiento -->
+	<div class="form-group row">
+		<label class="col-lg-3 col-form-label form-control-label">Fecha de Nacimiento</label>
+		<div class="col-lg-9">
+			<input type="date" class="form-control" id="fnac" name="fnac" min="1900-01-01" th:field="${personForm.dateB}">
+			<div class="alert-danger" th:if="${#fields.hasErrors('dateB')}" th:errors="*{dateB}">Error name</div>
+		</div>
+	</div>
+	<!-- Email -->
+	<div class="form-group row">
+		<label class="col-lg-3 col-form-label form-control-label">Email</label>
+		<div class="col-lg-9">
+			<input class="form-control" type="email" th:field="${personForm.email}">
+			<div class="alert-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Error name</div>
+		</div>
+	</div>
+	<!-- Telefono -->
+	<div class="form-group row">
+		<label class="col-lg-3 col-form-label form-control-label">Telefono</label>
+		<div class="col-lg-9">
+			<input class="form-control" type="text" th:field="${personForm.phone}">
+			<div class="alert-danger" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}">Error name</div>
+		</div>
+	</div>
+	<!-- Lugar de Residencia -->
+	<div class="form-group row">
+		<label class="col-lg-3 col-form-label form-control-label">Lugar de Residencia</label>
+		<div class="col-lg-9">
+			<select class="form-control" name="lres" id="lres" th:field="${personForm.cityA}">
+            	<option value="lres">Seleccione ...</option>
+        	</select>
+        	<div class="alert-danger" th:if="${#fields.hasErrors('cityA')}" th:errors="*{cityA}">Error name</div>
+		</div>
+	</div>
+	<!-- Usuario -->
+	<div class="form-group row">
+		<label class="col-lg-3 col-form-label form-control-label">Username</label>
+		<div class="col-lg-9">
+			<input class="form-control" type="text" th:field="${personForm.username}">
+			<div class="alert-danger" th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Error name</div>
+		</div>
+	</div>
+	<!-- Password -->
+	<div class="form-group row" th:if="${editMode==null or editMode==false}">>
+		<label class="col-lg-3 col-form-label form-control-label">Password</label>
+		<div class="col-lg-9">
+			<input class="form-control" type="password" th:field="${personForm.password}">
+			<div class="alert-danger" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Error name</div>
+		</div>
+	</div>
+	<!-- Confirmar -->
+	<div class="form-group row" th:if="${editMode==null or editMode==false}">>
+		<label class="col-lg-3 col-form-label form-control-label">Confirmar</label>
+		<div class="col-lg-9">
+			<input class="form-control" type="password" th:field="${personForm.confirmPassword}">
+			<div class="alert-danger" th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}">Error name</div>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-lg-12 text-center">
+			<a class="btn btn-secondary"  th:href="@{'/personForm/cancel'}">Cancel</a>
+			<input type="submit" class="btn btn-primary"
+				value="Save Changes" th:value="${editMode}?'Save Person':'Create Person'">
+		</div>
+	</div>
+	<div class="alert-danger text-center" th:if="${formErrorMessage}" th:text="${formErrorMessage}">Error Message</div>
+</form>
