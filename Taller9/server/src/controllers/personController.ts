@@ -5,7 +5,6 @@ import pool from '../database'
 class PersonController {
 
     public person (req: Request, res: Response) { 
-        res.send('Persons'); 
         pool.query('Describe persona');
         res.json('Persons');
     }/* Metodo que me retorna la ruta principal */
