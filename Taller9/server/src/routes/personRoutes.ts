@@ -1,5 +1,5 @@
 import {Router} from 'express';
-
+import {personController} from  '../controllers/personController'
 class PersonRoutes{
     public router: Router = Router();
     constructor(){
@@ -7,7 +7,7 @@ class PersonRoutes{
     }
 
     config():void {
-        this.router.get('/', (req, res) => res.send('Persons'));
+        this.router.get('/', personController.person);
     }
 }
 
