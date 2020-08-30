@@ -7,7 +7,11 @@ class PersonRoutes{
     }
 
     config():void {
-        this.router.get('/', personController.person);
+        this.router.get('/', personController.listPerson);
+        this.router.get('/:id', personController.getOne);
+        this.router.post('/', personController.create);
+        this.router.delete('/:id', personController.delete);
+        this.router.put('/:id', personController.update);
     }
 }
 

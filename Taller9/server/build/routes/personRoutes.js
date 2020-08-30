@@ -8,7 +8,11 @@ class PersonRoutes {
         this.config();
     }
     config() {
-        this.router.get('/', personController_1.personController.person);
+        this.router.get('/', personController_1.personController.listPerson);
+        this.router.get('/:id', personController_1.personController.getOne);
+        this.router.post('/', personController_1.personController.create);
+        this.router.delete('/:id', personController_1.personController.delete);
+        this.router.put('/:id', personController_1.personController.update);
     }
 }
 const personRoutes = new PersonRoutes();
