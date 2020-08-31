@@ -26,7 +26,7 @@ lugaresidencia int,
 email varchar (30),
 telefono int,
 usuario varchar(20),
-contraseña varchar(20),
+contrasena varchar(20),
 constraint tipodocumento foreign key (fk_tipodocumento) REFERENCES tipodocumento(id_tipdoc),
 constraint ciudad foreign key (lugaresidencia) references ciudad(id_ciudad)
 );
@@ -36,3 +36,7 @@ insert into ciudad (nombre_ciu, descripcion_c)values ('Bogotá', 'Capital');
 select * from ciudad;
 insert into tipodocumento (nombre_doc, descripcion_td) values ('CC', 'Cedula de Ciudadania');
 select * from tipodocumento;
+select id_persona, nombres, apellidos, nombre_doc as fk_tipodocumento, documento, nombre_ciu as lugaresidencia, email, telefono, usuario, contrasena
+ from persona 
+ join tipodocumento on fk_tipodocumento=id_tipdoc
+ join ciudad on lugaresidencia=id_ciudad;
