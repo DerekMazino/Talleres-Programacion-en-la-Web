@@ -1,6 +1,8 @@
 import express, {Application} from 'express'
 import indexRoutes from './routes/indexRoutes';
 import personRoutes from './routes/personRoutes';
+import citiesRoutes from './routes/cityRoutes'
+import documentRoutes from './routes/documentRoutes'
 import morgan from 'morgan';
 import cors from 'cors';
 class Server {
@@ -21,6 +23,8 @@ class Server {
     reoute (): void{/* Se definen las rutas del server */
         this.app.use(indexRoutes);
         this.app.use('/api/persons',personRoutes);
+        this.app.use('/api/cities',citiesRoutes);
+        this.app.use('/api/tdocuments',documentRoutes);
     }
     start() {/* Ejecuta el server */
         this.app.listen(this.app.get('port'), () => {

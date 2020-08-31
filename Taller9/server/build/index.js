@@ -6,6 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
 const personRoutes_1 = __importDefault(require("./routes/personRoutes"));
+const cityRoutes_1 = __importDefault(require("./routes/cityRoutes"));
+const documentRoutes_1 = __importDefault(require("./routes/documentRoutes"));
 const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
 class Server {
@@ -24,6 +26,8 @@ class Server {
     reoute() {
         this.app.use(indexRoutes_1.default);
         this.app.use('/api/persons', personRoutes_1.default);
+        this.app.use('/api/cities', cityRoutes_1.default);
+        this.app.use('/api/tdocuments', documentRoutes_1.default);
     }
     start() {
         this.app.listen(this.app.get('port'), () => {
