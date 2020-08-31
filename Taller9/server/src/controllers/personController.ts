@@ -5,7 +5,7 @@ import pool from '../database'
 class PersonController {
 
     public async listPerson (req: Request, res: Response) {
-        const result = await pool.query('SELECT * FROM persona', function(err, result, fields) {
+        const result = await pool.query('select id_persona, nombres, apellidos, nombre_doc as fk_tipodocumento, documento, nombre_ciu as lugaresidencia, email, telefono, usuario, contrasena from persona join tipodocumento on fk_tipodocumento=id_tipdoc join ciudad on lugaresidencia=id_ciudad', function(err, result, fields) {
             if (err) throw err;
             res.json(result);
         });

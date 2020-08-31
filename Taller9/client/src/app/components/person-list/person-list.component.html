@@ -1,0 +1,19 @@
+<div class="col-md-10" *ngFor="let person of persons">
+    <div class="card text-center">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+            {{person.nombres}}
+            {{person.apellidos}}
+            <button class="btn btn-danger">
+                <i class="far fa-trash-alt"></i>
+            </button>
+        </div>
+        <div class="card-body">
+            <p>Tipo Documento {{person.fk_tipodocumento}} Nº {{person.documento}}</p>
+            <p>{{person.lugaresidencia}}</p>
+            <p>{{person.email}}</p>
+            <p>{{person.telefono}}</p>
+            <p>{{person.usuario}}</p>
+            <a href="" class="btn btn-info btn-block">Edit Person</a>
+        </div>
+    </div>
+</div>

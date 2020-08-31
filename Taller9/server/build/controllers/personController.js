@@ -17,7 +17,7 @@ const database_1 = __importDefault(require("../database"));
 class PersonController {
     listPerson(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            const result = yield database_1.default.query('SELECT * FROM persona', function (err, result, fields) {
+            const result = yield database_1.default.query('select id_persona, nombres, apellidos, nombre_doc as fk_tipodocumento, documento, nombre_ciu as lugaresidencia, email, telefono, usuario, contrasena from persona join tipodocumento on fk_tipodocumento=id_tipdoc join ciudad on lugaresidencia=id_ciudad', function (err, result, fields) {
                 if (err)
                     throw err;
                 res.json(result);
