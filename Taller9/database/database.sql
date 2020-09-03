@@ -33,8 +33,12 @@ constraint ciudad foreign key (lugaresidencia) references ciudad(id_ciudad)
 
 describe ciudad;
 insert into ciudad (nombre_ciu, descripcion_c)values ('Bogotá', 'Capital');
+insert into ciudad (nombre_ciu, descripcion_c)values ('Bucaramanga', 'Ciudad Bonita');
+insert into ciudad (nombre_ciu, descripcion_c)values ('Medellin', 'Motosierras');
 select * from ciudad;
 insert into tipodocumento (nombre_doc, descripcion_td) values ('CC', 'Cedula de Ciudadania');
+insert into tipodocumento (nombre_doc, descripcion_td) values ('CE', 'Cedula de Extrangeria');
+insert into tipodocumento (nombre_doc, descripcion_td) values ('TI', 'Tarjeta de Identidad');
 select * from tipodocumento;
 select id_persona, nombres, apellidos, nombre_doc as fk_tipodocumento, documento, nombre_ciu as lugaresidencia, email, telefono, usuario, contrasena
  from persona 
