@@ -30,7 +30,7 @@ class PersonController {
             yield database_1.default.query('SELECT * FROM persona WHERE id_persona = ?', [id], (error, result) => {
                 if (error)
                     throw error;
-                res.send(result);
+                res.json(result);
                 /* res.status(404).json({text: "The person doesn't exists"}); */
             });
         });
@@ -52,7 +52,7 @@ class PersonController {
             yield database_1.default.query('Delete From persona WHERE id_persona = ?', [id], (error, result) => {
                 if (error)
                     throw error;
-                res.send('Person deleted.');
+                res.json('Person deleted.');
             });
         });
     }
@@ -62,7 +62,7 @@ class PersonController {
             yield database_1.default.query('UPDATE persona SET ? WHERE id_persona = ?', [req.body, id], (error, result) => {
                 if (error)
                     throw error;
-                res.send('Person updated successfully.');
+                res.json('Person updated successfully.');
             });
         });
     }

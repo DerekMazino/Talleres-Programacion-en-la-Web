@@ -1,42 +1,49 @@
-<div class="col-md-4 offset-md-4">
+<div class="col-md-4 offset-md-2">
     <div class="card">
         <div class="card-body">
             <form>
                 <div class="form-group">
-                    <input type="text" name="nombres" placeholder="Nombres" class="form-control" autofocus>
+                    <input type="text" name="nombres" [(ngModel)]="person.nombres" placeholder="Nombres" class="form-control" autofocus>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="apellidps" placeholder="Apellidos" class="form-control">
+                    <input type="text" name="apellidps" [(ngModel)]="person.apellidos" placeholder="Apellidos" class="form-control">
                 </div>
                 <div class="form-group">
-                    <select name="tipoDocumento" class="form-control">
+                    <select name="tipoDocumento" [(ngModel)]="person.fk_tipodocumento" class="form-control">
                         <option *ngFor="let tdocument of tdocuments" [value]="tdocument.id_tipdoc">{{tdocument.nombre_doc}}</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="documento" placeholder="Documento" class="form-control">
+                    <input type="text" name="documento" [(ngModel)]="person.documento" placeholder="Documento" class="form-control">
                 </div>
                 <div class="form-group">
-                    <select name="ciudad" class="form-control">
+                    <select name="ciudad" [(ngModel)]="person.lugaresidencia" class="form-control">
                         <option *ngFor="let city of cities" [value]="city.id_ciudad">{{city.nombre_ciu}}</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="Email" class="form-control">
+                    <input type="email" name="email" [(ngModel)]="person.email" placeholder="Email" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="telefono" placeholder="Telefono" class="form-control">
+                    <input type="text" name="telefono" maxlength="8" [(ngModel)]="person.telefono" placeholder="Telefono" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="usuario" placeholder="Usuario" class="form-control">
+                    <input type="text" name="usuario" [(ngModel)]="person.usuario" placeholder="Usuario" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="password" name="contrasena" placeholder="Password" class="form-control">
+                    <input type="password" name="contrasena" [(ngModel)]="person.contrasena" placeholder="Password" class="form-control">
                 </div>
-                <button class="btn btn-success btn-block">
+                <button class="btn btn-success btn-block" (click)="edit ? updatePerson() : saveNewPerson()">
                     Save 
                 </button>
             </form>
         </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card card-body text-center">
+        <h4>{{person.nombres == '' ? 'Escirbe tu nombre' : person.nombres}}  {{person.apellidos}} </h4>
+        <p>Documento Nº {{person.documento}}</p>
     </div>
 </div>

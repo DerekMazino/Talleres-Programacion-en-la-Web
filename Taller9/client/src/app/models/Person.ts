@@ -1,5 +1,5 @@
 export interface Person{
-    id?: number;/* Se colcoa ? para que no sea requerido */
+    id?: string;/* Se colcoa ? para que no sea requerido */
     nombres? : string;
     apellidos? : string;
     fk_tipodocumento? : number;
