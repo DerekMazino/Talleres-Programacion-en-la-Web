@@ -4,14 +4,14 @@ import personRoutes from './routes/personRoutes';
 import citiesRoutes from './routes/cityRoutes'
 import documentRoutes from './routes/documentRoutes'
 import morgan from 'morgan';
-import cors from 'cors';  
-class Server {
+import cors from 'cors'; 
+class Server { 
 
     public app: Application; /* Se crea una variable de tipo application */
     constructor(){
         this.app=express(); /* Se asigna un valor, en este caso un objeto de tipo express */
         this.config();
-        this.reoute(); 
+        this.reoute();  
     }
     config(): void {/* Metodo para configurar el server */
         this.app.set('port', process.env.PORT || 3000);/* Se asigna un puerto al server */

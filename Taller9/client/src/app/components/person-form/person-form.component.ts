@@ -15,7 +15,7 @@ export class PersonFormComponent implements OnInit {
   @HostBinding('class') classes = 'row';
   person: Person = {
     /* Se colcoa ? para que no sea requerido */
-    id: '',
+    id_persona: 0,
     nombres : '',
     apellidos : '',
     fk_tipodocumento : 0,
@@ -54,9 +54,8 @@ export class PersonFormComponent implements OnInit {
     if(params.id){
       this.personService.getPerson(params.id).subscribe(
         res => {
-          console.log(res);
           this.person=res[0];
-          console.log(this.person);
+          this.edit=true;
         },
         err => console.error(err)
       )
@@ -64,7 +63,7 @@ export class PersonFormComponent implements OnInit {
   } 
   saveNewPerson(){
       /* console.log(this.person); */
-      delete this.person.id;
+      delete this.person.id_persona;
       this.personService.savePerson(this.person)
         .subscribe(
           res => {
@@ -75,15 +74,16 @@ export class PersonFormComponent implements OnInit {
         )
   }
   updatePerson(){
-    console.log(this.person.id);
-    /* this.personService.updatePerson(this.person.id, this.person)
+    console.log('Bandera');
+    console.log(this.person.id_persona);
+    this.personService.updatePerson(String(this.person.id_persona), this.person)
       .subscribe(
         res => { 
           console.log(res);
           this.router.navigate(['/persons']);
         },
         err => console.error(err)
-      ) */
+      )
   }
 
 }
